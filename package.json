@@ -9,7 +9,7 @@
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aaron Mfundo Jiane",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^7.1.2",

@@ -1,0 +1,162 @@
+/* GENERAL STYLES */
+:root {
+    --primary: #2B2D42; /* Dark Slate Blue */
+    --secondary: #8D99AE; /* Cool Gray */
+    --third: #EDF2F4; /* Soft Off-White */
+    --complimentary: rgb(231, 148, 24); /* Orange adjusted */
+    --primaryText: #FFFFFF; /* Pure White */
+    --bodyText: #2B2D42; /* Dark Slate Blue */
+    --bodyText2: #8D99AE; /* Cool Gray */
+    --standout: green; /* Green */
+    --valid: #28a745; /* Green for valid input */
+    --invalid: #99000f; /* Red for invalid input */
+}
+
+html {
+    background-color: var(--primary);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: var(--third);
+    color: var(--bodyText);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    margin: 0px;
+}
+
+.hero {
+    background-color: var(--primary);
+    color: var(--primaryText);
+    padding: 15px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.auth-section {
+    background-color: var(--third);
+    width: 100%;
+    max-width: 320px;
+    padding: 10px 20px;
+    margin-top: -20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-form h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    margin-bottom: 2px;
+    color: var(--primary);
+}
+
+.auth-form p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--bodyText2);
+    text-align: center;
+}
+
+.auth-form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: var(--bodyText2);
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border: 1px solid var(--bodyText2);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.auth-form input::placeholder {
+    color: var(--bodyText2);
+    opacity: 0.8;
+    padding: 5px;
+}
+
+.auth-form input:valid {
+    border-color: var(--valid);
+    background-color: #eaffea;
+}
+
+.auth-form input:invalid {
+    border: 1px dashed;
+    border-color: var(--invalid);
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: var(--complimentary);
+    background-color: var(--third);
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Lora', serif;
+}
+
+.auth-form .signUp {
+    background-color: var(--complimentary);
+    color: var(--primaryText);
+}
+
+.auth-form .signUp:hover,
+.auth-form .signUp:focus {
+    background-color: var(--primary);
+    color: var(--complimentary);
+}
+
+.auth-form .login {
+    background-color: var(--secondary);
+    color: var(--primaryText);
+}
+
+.auth-form .login:hover,
+.auth-form .login:focus {
+    background-color: var(--primary);
+    color: var(--secondary);
+}

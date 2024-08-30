@@ -1,0 +1,217 @@
+:root {
+    --primary: #2B2D42; /* Dark Slate Blue */
+    --secondary: #8D99AE; /* Cool Gray */
+    --third: #EDF2F4; /* Soft Off-White */
+    --primaryText: #FFFFFF; /* Pure White */
+    --bodyText: #2B2D42; /* Dark Slate Blue */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: var(--third);
+    color: var(--bodyText);
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    background-color: var(--primary);
+    min-height: 77vh;
+}
+
+.courses-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.courses-grid {
+    :root {
+        --primary: #2B2D42; /* Dark Slate Blue */
+        --secondary: #8D99AE; /* Cool Gray */
+        --third: #EDF2F4; /* Soft Off-White */
+        --primaryText: #FFFFFF; /* Pure White */
+        --bodyText: #2B2D42; /* Dark Slate Blue */
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Merriweather', serif;
+        background-color: var(--third);
+        color: var(--bodyText);
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        background-color: var(--primary);
+    }
+    
+    .courses-section {
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .courses-heading {
+        font-family: 'Lora', serif;
+        font-size: 2.5rem;
+        color: var(--primaryText);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .course-card {
+        background-color: var(--primary);
+        color: var(--primaryText);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .course-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .course-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    
+    .course-duration {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: var(--secondary);
+    }
+    
+    .fa-php {
+        color: #777BB4;
+    }
+    
+    .fa-js-square {
+        color: #F7DF1E;
+    }
+    
+    .fa-python {
+        color: #3776AB;
+    }
+    
+    .fa-code {
+        color: #3178C6; 
+    }
+    
+    .fa-wordpress {
+        color: #21759B;
+    }
+    
+    .fa-java {
+        color: #007396;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .course-icon {
+            font-size: 2.5rem;
+        }
+    
+        .course-card {
+            padding: 15px;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .course-icon {
+            font-size: 2rem;
+        }
+    
+        .course-card {
+            padding: 10px;
+        }
+    }
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: var(--primary);
+    color: var(--primaryText);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.fa-php {
+    color: #777BB4;
+}
+
+.fa-js-square {
+    color: #F7DF1E;
+}
+
+.fa-python {
+    color: #3776AB;
+}
+
+.fa-code {
+    color: #3178C6; 
+}
+
+.fa-wordpress {
+    color: #21759B;
+}
+
+.fa-java {
+    color: #007396;
+}
+
+@media only screen and (max-width: 768px) {
+    .course-icon {
+        font-size: 2.5rem;
+    }
+
+    .course-card {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .course-icon {
+        font-size: 2rem;
+    }
+
+    .course-card {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,49 @@
+/* GENERAL STYLES */
+:root {
+    --primary: #2B2D42; /* Dark Slate Blue */
+    --secondary: #8D99AE; /* Cool Gray */
+    --third: #EDF2F4; /* Soft Off-White */
+    --primaryText: #FFFFFF; /* Pure White */
+    --bodyText: #2B2D42; /* Dark Slate Blue */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: var(--third);
+    color: var(--bodyText);
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 70px;
+    background-color: var(--primary);
+    min-height: 77vh;
+}
+
+.about-section {
+    max-width: 800px;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--primaryText);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

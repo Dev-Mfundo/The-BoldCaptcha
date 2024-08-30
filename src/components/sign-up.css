@@ -3,7 +3,7 @@
     --primary: #2B2D42; /* Dark Slate Blue */
     --secondary: #8D99AE; /* Cool Gray */
     --third: #EDF2F4; /* Soft Off-White */
-    --complimentary: rgb(231, 148, 24); /* Orange adjusted */
+    --complimentary: #e79418; /* Orange adjusted */
     --primaryText: #FFFFFF; /* Pure White */
     --bodyText: #2B2D42; /* Dark Slate Blue */
     --bodyText2: #8D99AE; /* Cool Gray */
@@ -29,9 +29,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 20px 0px;
     margin: 0px;
+    min-height: 77vh;
 }
 
 .hero {
@@ -98,7 +98,7 @@ main {
 .auth-form input {
     width: 100%;
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid var(--bodyText2);
     border-radius: 5px;
     font-size: 1.1rem;
@@ -127,7 +127,17 @@ main {
     border-color: var(--complimentary);
     background-color: var(--third);
 }
-
+.forgotTag{
+    color: var(--primary);
+    position: relative;
+    right: 105px;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+.forgotTag:hover{
+    color: var(--valid);
+}
 .auth-form button {
     width: 100%;
     padding: 12px 20px;
@@ -139,7 +149,7 @@ main {
     font-family: 'Lora', serif;
 }
 
-.auth-form .signUp {
+.auth-form .signUp,.login {
     background-color: var(--complimentary);
     color: var(--primaryText);
 }
@@ -148,11 +158,6 @@ main {
 .auth-form .signUp:focus {
     background-color: var(--primary);
     color: var(--complimentary);
-}
-
-.auth-form .login {
-    background-color: var(--secondary);
-    color: var(--primaryText);
 }
 
 .auth-form .login:hover,

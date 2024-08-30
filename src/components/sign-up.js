@@ -2,9 +2,8 @@ import "./sign-up.css";
 
 export default function authUser(type) {
     const main = document.querySelector("main");
-    main.innerHTML = ""; // Clear any existing content
+    main.innerHTML = "";
 
-    // HERO SECTION
     const heroSection = document.createElement("section");
     heroSection.className = "hero";
     heroSection.innerHTML = `
@@ -15,7 +14,7 @@ export default function authUser(type) {
     `;
     main.appendChild(heroSection);
 
-    // FORM SECTION
+
     const formSection = document.createElement("section");
     formSection.className = "auth-section";
 
@@ -32,7 +31,7 @@ export default function authUser(type) {
         : "Log in to continue your learning.";
     form.appendChild(subHeader);
 
-    // EMAIL FIELD
+
     const emailLabel = document.createElement("label");
     emailLabel.textContent = "Email Address";
     form.appendChild(emailLabel);
@@ -44,7 +43,6 @@ export default function authUser(type) {
     emailInput.placeholder = "Enter your email";
     form.appendChild(emailInput);
 
-    // PASSWORD FIELD
     const passwordLabel = document.createElement("label");
     passwordLabel.textContent = "Password";
     form.appendChild(passwordLabel);
@@ -55,8 +53,14 @@ export default function authUser(type) {
     passwordInput.required = true;
     passwordInput.placeholder = "Enter your password";
     form.appendChild(passwordInput);
+    if (type === "login") {
+        const forgotP= document.createElement("a");
+        forgotP.innerHTML="forgot password?";
+        forgotP.link="#";
+        forgotP.className="forgotTag";
+        form.appendChild(forgotP);
+    }
 
-    // SIGN UP SPECIFIC FIELD
     if (type === "signUp") {
         const confirmPasswordLabel = document.createElement("label");
         confirmPasswordLabel.textContent = "Confirm Password";
@@ -70,7 +74,6 @@ export default function authUser(type) {
         form.appendChild(confirmPasswordInput);
     }
 
-    // SUBMIT BUTTON
     const submitButton = document.createElement("button");
     submitButton.type = "submit";
     submitButton.className = type === "signUp" ? "signUp" : "login";
@@ -83,7 +86,6 @@ export default function authUser(type) {
     return main;
 };
 
-// Example usage for sign up and login pages
 export function signUp() {
     return authUser("signUp");
 }

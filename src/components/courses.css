@@ -21,7 +21,7 @@ main {
     align-items: center;
     padding-top: 70px;
     background-color: var(--primary);
-    min-height: 77vh;
+    min-height: 90vh;
 }
 
 .courses-section {

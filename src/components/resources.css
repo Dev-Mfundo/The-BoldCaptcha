@@ -1,0 +1,104 @@
+:root {
+    --resources-primary: #2B2D42;
+    --resources-secondary: #8D99AE;
+    --resources-third: #EDF2F4;
+    --resources-primaryText: #FFFFFF;
+    --resources-bodyText: #2B2D42;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: var(--resources-third);
+    color: var(--resources-bodyText);
+    min-height: 100vh
+}
+
+.resources-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--resources-primary);
+    min-height: 90vh;
+}
+
+.resources-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--resources-third);
+    color: var(--resources-bodyText);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resources-section h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resource-item {
+    margin-bottom: 40px;
+}
+
+.resource-item h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.resource-code {
+    background-color: var(--resources-primary);
+    color: var(--resources-primaryText);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.resource-code code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .resources-section h1 {
+        font-size: 2rem;
+    }
+
+    .resource-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .resource-code {
+        padding: 15px;
+    }
+
+    .resource-code code {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .resources-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .resource-item h2 {
+        font-size: 1.2rem;
+    }
+
+    .resource-code {
+        padding: 10px;
+    }
+
+    .resource-code code {
+        font-size: 0.8rem;
+    }
+}

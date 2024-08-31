@@ -76,6 +76,7 @@ export default function authUser(type) {
 
     const submitButton = document.createElement("button");
     submitButton.type = "submit";
+    submitButton.id = type === "signUp" ? "signUp" : "login";
     submitButton.className = type === "signUp" ? "signUp" : "login";
     submitButton.textContent = type === "signUp" ? "Sign Up" : "Log In";
     form.appendChild(submitButton);

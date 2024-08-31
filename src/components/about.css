@@ -1,4 +1,3 @@
-/* GENERAL STYLES */
 :root {
     --primary: #2B2D42; /* Dark Slate Blue */
     --secondary: #8D99AE; /* Cool Gray */
@@ -23,7 +22,7 @@ main {
     padding: 20px;
     padding-top: 70px;
     background-color: var(--primary);
-    min-height: 77vh;
+    min-height: 90vh;
 }
 
 .about-section {

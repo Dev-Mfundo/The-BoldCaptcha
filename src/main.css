@@ -180,7 +180,7 @@ header {
 main {
     background-color: var(--third);
     padding-top: 70px;
-    min-height: 77vh;
+    min-height: 90vh;
 }
 /* FOOTER*/
 footer {

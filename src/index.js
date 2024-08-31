@@ -4,11 +4,13 @@ import {signUp,login} from "./components/sign-up";
 import header from "./components/header";
 import displayCourses from "./components/courses";
 import displayAbout from "./components/about";
-import displayCommunity from "./components/community";
+import displayResources from "./components/resources";
+
 
 const App=(()=>{
     header();
-    //AUTHORIZATION
+
+    
     const signUpBtn = document.querySelector(".signUp");
         signUpBtn.addEventListener("click", ()=>{
             signUp();
@@ -27,8 +29,18 @@ const App=(()=>{
     aboutBtn.addEventListener("click", ()=>{
         displayAbout();
     });
+    const resourcesBtn = document.querySelector(".resources");
+    resourcesBtn.addEventListener("click", ()=>{
+        displayResources()
+    });
+    document.addEventListener('DOMContentLoaded', () => {
     const communityBtn = document.querySelector(".community");
-    communityBtn.addEventListener("click", ()=>{
-        displayCommunity()
-    })
+    
+    if (communityBtn) {
+        communityBtn.addEventListener('click', () => {
+            window.location.href = 'https://discord.gg/6Aebr8BYKG';
+        });
+    }
+});
+
 })();

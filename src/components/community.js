@@ -15,7 +15,7 @@ export default function displayCommunity() {
     const content = document.createElement("p");
     content.className = "community-content";
     content.textContent = `
-        At BoldCaptcha, we believe in the power of community. 
+        We believe in the power of community. 
         Our vibrant Discord server is where learners from all around the world come together to help each other grow. 
         Whether you're stuck on a problem or just want to share your progress, 
         there's always someone ready to lend a hand or offer advice. 

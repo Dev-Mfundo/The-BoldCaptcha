@@ -8,12 +8,12 @@ export default function displayAbout() {
     aboutSection.className = "about-section";
 
     const header = document.createElement("h1");
-    header.textContent = "About BoldCaptcha";
+    header.textContent = "BoldCaptcha";
     aboutSection.appendChild(header);
 
     const content = document.createElement("p");
     content.textContent = `
-        At BoldCaptcha, we're not just another tech platform—we're a community of passionate developers, 
+        We're not just another tech platform—we're a community of passionate developers, 
         innovators, and learners who believe in the power of technology to change lives. 
         Our mission is to bring the best programming courses to everyone, no matter where they start, 
         and help them transform into world-class programmers.

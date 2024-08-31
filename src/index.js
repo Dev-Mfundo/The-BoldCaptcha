@@ -9,8 +9,6 @@ import displayResources from "./components/resources";
 
 const App=(()=>{
     header();
-
-    
     const signUpBtn = document.querySelector(".signUp");
         signUpBtn.addEventListener("click", ()=>{
             signUp();
